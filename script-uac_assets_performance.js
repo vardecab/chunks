@@ -1,4 +1,4 @@
-//  NOTE: no longer working with newest UAC update
+//  NOTE: no longer working with latest UAC update
 
 rows = document.querySelectorAll('.particle-table-row');
 assets = [];

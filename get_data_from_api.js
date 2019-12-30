@@ -1,4 +1,5 @@
 // how to use JSON API in JavaScript
+// example based on OpenWeatherMap API (https://openweathermap.org/api)
 
 const api_key = "";
 
