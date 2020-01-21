@@ -33,8 +33,10 @@
 ### actual stuff when the fun begins 🚀 
 import random
 import webbrowser 
+from datetime import datetime # calculate script's run time
 
 print("Starting...")
+start = datetime.now()
 
 # lists with questions and answers
 entry_212735391 = ["Nie%2C+w+og%C3%B3le.", "Tak%2C+ale+nie+wi%C4%99cej+ni%C5%BC+1+dzie%C5%84+w+tygodniu.", "Tak%2C+wi%C4%99cej+ni%C5%BC+1+dzie%C5%84+w+tygodniu.", "Tak%2C+ca%C5%82y+czas."] ### be sure to replace `_` with `.` later on, eg entry.212735391
@@ -48,7 +50,7 @@ entry_2061846154 = ["Marketing", "Us%C5%82ugi", "IT", "Finanse", "Budownictwo", 
 entry_1190076232 = ["M%C5%82odszy+specjalista+(junior)", "Sta%C5%BCysta+%2F+Asystent", "Specjalista", "Starszy+specjalista+(senior)", "Lider", "Mened%C5%BCer", "Dyrektor", "Zarz%C4%85d"]
 entry_1635131053 = ["1", "2-5", "6-20", "21-50", "51-100", "101-200", "201-500", "500%2B"]
 entry_56442886 = ["0%2B", "16-20", "21-25", "26-30", "31-40", "41-50"] 
-entry_418804101 = [] ### email address 
+# entry_418804101 = [] ### email address 
 
 url_to_submit_without_answers = "https://docs.google.com/forms/d/e/1FAIpQLScDtDHdh6C-kUiNKOWRd_-SXvxwrZJUseYM4vAfkjSGaATTyA/formResponse?usp=pp_url" ### important to have `formResponse` in the URL instead of `viewform`
 
@@ -70,3 +72,4 @@ while loop_counter <= how_many_runs:
     loop_counter += 1
 
 print("Great success! :)")
+print("Run time:", datetime.now()-start)
